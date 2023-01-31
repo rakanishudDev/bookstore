@@ -9,7 +9,7 @@ import Link from 'next/link'
 import getStripe from '../../libs/getStripe'
 import Loading from '../../components/Loading'
 
-const cart = () => {
+const Cart = () => {
     const {data: session} = useSession()
     const [cart, setCart] = useState(null)
     const [total, setTotal] = useState(null)
@@ -155,4 +155,4 @@ const cart = () => {
 }
 
 
-export default cart
+export default Cart

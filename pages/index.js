@@ -39,7 +39,7 @@ export default function Home() {
         <div className="flex justify-center flex-wrap gap-6">
           {books?.map((book, i) => {
             if (i < 5) {
-              return <FrontpageAddBook book={book}/>
+              return <FrontpageAddBook key={i} book={book}/>
             }
           })}
         </div>

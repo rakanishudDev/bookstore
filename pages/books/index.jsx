@@ -4,7 +4,7 @@ import { client } from '../../sanity/client'
 import {useSession, signIn} from "next-auth/react"
 import BooksLayout from '../../components/BooksLayout'
 
-const index = () => {
+const Books = () => {
     const [books, setBooks] = useState(null)
     const [totalCount, setTotalCount] = useState(0)
     const {data: session} = useSession()
@@ -30,4 +30,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Books

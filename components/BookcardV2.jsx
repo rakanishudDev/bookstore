@@ -4,6 +4,7 @@ import {AiFillStar} from "react-icons/ai"
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { getCategoryIndex } from '../utilis/categories'
+import Image from 'next/image'
 
 const BookcardV2 = ({book}) => {
     const [toSlice, setToSlice] = useState(false)
