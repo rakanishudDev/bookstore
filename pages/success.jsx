@@ -7,7 +7,7 @@ import Loading from '../components/Loading'
 import { useRouter } from 'next/router'
 import {IoBagCheckSharp} from "react-icons/io5"
 
-const success = () => {
+const Success = () => {
     const {setCartLength, carthLength, buyingMethod, setBuyingMethod} = useAppStateContext()
     const {data: session} = useSession()
     const [loading, setLoading] = useState(false)
@@ -54,4 +54,4 @@ const success = () => {
   )
 }
 
-export default success
+export default Success
