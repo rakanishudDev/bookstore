@@ -1,16 +1,13 @@
 import NextAuth from "next-auth"
-import GoogleProvider from "next-auth/providers/google"
 import GitHubProvider from "next-auth/providers/github"
 import { client } from "../../../sanity/client"
-import { v4 as uuidv4 } from "uuid"
-
 
 
 export default NextAuth({
     providers: [
         GitHubProvider({
-            clientId: "c1e9446fe2f61b80250d",
-            clientSecret: "517a7702bc647586b1ee4f43954859098ef8f3f2"
+            clientId: process.env.NEXT_PUBLIC_GITHUB_AUTH_ID,
+            clientSecret: process.env.NEXT_PUBLIC_GITHUB_AUTH_SECRET
         })
     ],
     callbacks: {
