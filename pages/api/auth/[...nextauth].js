@@ -10,6 +10,7 @@ export default NextAuth({
             clientSecret: process.env.NEXT_PUBLIC_GITHUB_AUTH_SECRET
         })
     ],
+    secret: "ewujnbfun2n232cn293",
     callbacks: {
         async jwt({token, account, profile}) {
             if (account) {
