@@ -96,7 +96,7 @@ const BooksLayout = ({pagination, bookList, category, searchTerm, totalCount}) =
                             {/* <p className="text-md">Total of {totalCount} results</p> */}
                         </div>
             }
-            {searchTerm && <p className="text-md"> Total of {totalCount} results for <span className="text-lg"> "{searchTerm}"</span></p>}
+            {searchTerm && <p className="text-md"> Total of {totalCount} results for <span className="text-lg"> <i>{searchTerm}</i></span></p>}
             <div className="flex justify-between items-center gap-2">
                 <div>
                     <select className="border border-black mr-1 outline-none" onChange={(e) => sortBy(e.target.value)}>
