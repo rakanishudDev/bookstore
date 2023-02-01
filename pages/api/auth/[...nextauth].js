@@ -8,13 +8,9 @@ import { v4 as uuidv4 } from "uuid"
 
 export default NextAuth({
     providers: [
-        GoogleProvider({
-            clientId: "74827946088-5vmqcm70irrdln40ccfv6ita3a2dfiir.apps.googleusercontent.com",
-            clientSecret: "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"
-        }),
         GitHubProvider({
             clientId: "c1e9446fe2f61b80250d",
-            clientSecret: "1106f41ae58805763fe536142f6f385665381da8"
+            clientSecret: "517a7702bc647586b1ee4f43954859098ef8f3f2"
         })
     ],
     callbacks: {
