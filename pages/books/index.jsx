@@ -11,7 +11,7 @@ const Books = () => {
 
     useEffect(() => {
         client.fetch(`{
-          "books": *[_type == "books"] [0...10],
+          "books": *[_type == "books"] [0...15],
           "totalCount": count(*[_type == "books"])
         }`).then(data => {
           data.books.map(book => {

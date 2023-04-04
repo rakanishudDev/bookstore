@@ -24,11 +24,11 @@ const BooksLayout = ({pagination, bookList, category, searchTerm, totalCount}) =
         setFetching(prevState => !prevState)
         setSecondView(gridView)
         if (gridView) {
+            setBooksPerPage(25)
+            fetchMoreBooks(0, 25)
+        } else {
             setBooksPerPage(15)
             fetchMoreBooks(0, 15)
-        } else {
-            setBooksPerPage(10)
-            fetchMoreBooks(0, 10)
         }
 
     }

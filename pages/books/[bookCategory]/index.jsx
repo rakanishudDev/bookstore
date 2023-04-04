@@ -14,7 +14,7 @@ const BookCategory = () => {
     useEffect(() => {
         if (bookCategory) {
             client.fetch(`{
-                "books": *[_type == "books" && category match "${category}"] | order(createdAt desc) [0...10],
+                "books": *[_type == "books" && category match "${category}"] | order(createdAt desc) [0...15],
                 "totalCount": count(*[_type == "books" && category match "${category}"])
             }`).then(data => {
                 setBooks(data.books)

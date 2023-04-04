@@ -10,12 +10,13 @@ import AddToCartBtn from './AddToCartBtn'
 const Bookcard = ({book}) => {
     const {data: session} = useSession()
     const categoryIndex = getCategoryIndex(book.category)
+    const imgUrl = urlFor(book.image).width(150)
 
   return (
     <div className="flex  border border-slate-100 m-1 min-w-[400px] max-w-[1200px] mb-2 bg-white">
         <div className="px-8 py-2 bg-slate-50">
             <Link href={`/books/${categoryIndex}/${book._id}`}>
-                <img src={urlFor(book.image).width(150)} alt="book" />
+                <img src={imgUrl} alt="book" />
             </Link>
         </div>
         <div className="flex flex-col justify-between w-full my-2 mx-3">

@@ -8,7 +8,7 @@ const Review = ({review, longReview}) => {
     <>
     { readMore ? 
         <div>                    
-            <div className="max-w-3xl border-b border-gray-200 pb-4 mt-3">
+            <div className="max-w-4xl border-b border-gray-200 pb-4 mt-3">
                 <div className="flex gap-2 items-center">
                     <img className="m-1 rounded-full" width="35" src="/user1.jpg" />
                     <p className="text-sm font-semibold">Bookstroe customer</p>
@@ -24,7 +24,7 @@ const Review = ({review, longReview}) => {
             </div>
         </div>
     :
-    <div className="max-w-3xl border-b border-gray-200 pb-4 mt-3">
+    <div className="max-w-4xl border-b border-gray-200 pb-4 mt-3">
         <div className="flex gap-2 items-center">
             <img className="m-1 rounded-full" width="35" src="/user1.jpg" />
             <p className="text-sm font-semibold">Bookstroe customer</p>
